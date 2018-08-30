@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width" />
     <meta charset="UTF-8">
     <title>Jose Rodriguez</title>
     <style>
-        body{margin: 0; background-color: #4F4F4F}
+        body
+        {
+            margin: 0;
+            background-color: #4F4F4F;
+        }
         ::placeholder{color: #e0e0e0;}
         h1{
             position:sticky;
@@ -74,9 +79,8 @@
         }
         button:focus {outline: 0;}
 
-        li a:active{color:white;}
 
-        li a:hover
+        li button:hover
         {
             color:white;
         }
@@ -98,19 +102,21 @@
 
         img.profile
         {
-
-            float: left;
+            float:left;
             margin:100px 60px;
             border: 3px solid black;
+            width:250px;
+            height:350px;
+            display: inline;
         }
 
         img.game
         {
             display: block;
             border: 2px solid black;
-            width: 50%;
-            margin: 20px auto
-
+            margin: 20px auto;
+            width: 600px;
+            height: 400px;
         }
 
         img.contact
@@ -126,23 +132,99 @@
         div p{font-size: 30px; padding:10px;}
         b{height:20px;  margin: 20px auto;}
 
+        @media only screen and (max-width: 1446px)
+        {
+
+            img.profile
+            {
+                width:180px;
+                height:240px;
+            }
+
+            img.game{
+                width:500px;
+                height: 300px;
+            }
+
+        }
+
+        @media only screen and (max-width: 1180px)
+        {
+
+            img.profile
+            {
+                width:140px;
+                height:200px;
+            }
+
+            img.game{
+                width:400px;
+                height: 300px;
+            }
+
+        }
+
+        @media only screen and (max-width: 1030px)
+        {
+
+            img.profile
+            {
+                display: none;
+            }
+
+            img.game{
+                width:350px;
+                height: 250px;
+            }
+
+            h1
+            {
+                font-size: 30px;
+            }
+            .sub
+            {
+                font-size: 20px;
+            }
+            .scroll{
+                font-size: 10px;
+            }
+
+            .standard{
+                margin: 50px auto;
+            }
+            div h2{
+                padding: 0 10px;
+            }
+            div p{
+                padding: 0 10px;
+            }
+        }
+
+        @media only screen and (max-width: 1030px)
+        {
+            img.game{
+                width:300px;
+                height: 200px;
+            }
+
+        }
 
     </style>
 </head>
 <body>
 
-<h1>Jose Rodriguez <p>Software Engineer</p>
+<h1>Jose Rodriguez <p class="sub">Software Engineer</p>
 
 <ul class = "header">
-    <li><button onclick = "scrollhome()">About Me</button></li>
-    <li><button onclick = "scrollprojects()">Projects</button></li>
-    <li><button onclick= "scrollcontact()">Social</button></li>
+    <li class="scroll"><button onclick = "scrollhome()">About Me</button></li>
+    <li class="scroll"><button onclick = "scrollprojects()">Projects</button></li>
+    <li class="scroll"><button onclick= "scrollcontact()">Social</button></li>
 
 
 </ul>
 
 </h1>
-<img class = "profile" src = "public/mypic.jpg" width=250px height=350px>
+<img class = "profile" src = "public/mypic.jpg">
 <div class = "standard">
 <div class="display">
     <h2>About Me</h2>
@@ -164,7 +246,7 @@
 
     <h3 class = "gscroll">Video Game:</h3>
     <p>I made a fun little Android game I made using the Unity Game Engine. Here's a GIF of it:</p>
-    <img class = "game" src = "public/gamegif.gif" width = 600px height = 400px">
+    <img class = "game" src = "public/gamegif.gif">
 
     <p> Source Code and Files found <a href="https://github.com/jrodr056/Super-Death-Times" target="_blank">Here.</a></p>
 
