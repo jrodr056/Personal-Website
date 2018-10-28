@@ -1,317 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <meta charset="UTF-8">
-    <title>Jose Rodriguez</title>
-    <style>
-        body
-        {
-            margin: 0;
-            background-color: #4F4F4F;
-        }
-        ::placeholder{color: #e0e0e0;}
-        h1{
-            position:sticky;
-            background-color: black;
-            color: cyan;
-            font-family: "Courier New";
-            line-height:10px;
-            padding:15px;
-            margin:0;
-            top:0;
-            border: 3px solid cyan;
-            font-size:45px;
-        }
-        h1 p{font-size: 30px;}
-        p a
-        {
-            color:cyan;
-            text-decoration: none;
-        }
-        ul.header
-        {
-            text-align: right;
-            top:0;
-            list-style-type: none;
-            margin:0;
-            padding-right:50px;
-            overflow: visible;
-            background-color: black;
+<meta name="viewport" content="width=device-width" />
+<meta charset="UTF-8">
+<title>Jose Rodriguez</title>
+<style>
+    body {
+        margin: 0;
+        background-color: black;
+    }
+
+    .header{
+        margin-top: 0px;
+        border-bottom: 2px solid #C8C8C8;
+        width:100%;
+        color: #C8C8C8;
+        margin-bottom: 4%;
+    }
+
+    h1{
+        margin: 0px;
+        padding-left: 8%;
+        padding-top: 10px;
+    }
+    h2{
+        color: #C8C8C8;
+        text-align: center;
+    }
+
+    h3{
+        color: #C8C8C8;
+        font-size: 20px;
+        padding-left: 15%;
+    }
+    .main,.main2,.main3{
+        margin: auto;
+        width: 60%;
+        padding-top: 10px;
+        border: 1px solid #C8C8C8;
+    }
+    .main2,.main3{
+        display: none;
+        margin: auto;
+        width: 60%;
+        padding-top: 10px;
+        border: 1px solid #C8C8C8;
+    }
 
 
-        }
 
-        ul.lcontact
-        {
-            text-align: left;
-            top:0;
-            list-style-type: none;
-            margin:0;
-            overflow: visible;
+    .about{
+        text-align: center;
+        color: #C8C8C8;
+        line-height: 1.6;
+    }
 
+    .car{
+        margin: 0px;
+        padding-left: 8%;
+        font-size: 20px;
+    }
 
-        }
+    .headerlist{
+        list-style-type: none;
+        text-align: right;
+        top:0;
+        margin:0;
+        padding-right:8%;
+        overflow: visible;
+        padding-bottom: 15px;
 
-        li
-        {
-            display:inline-block;
-        }
-        li a
-        {
-            font-size:25px;
-            text-decoration: none;
-            text-align: center;
-            padding: 10px;
-            color: cyan;
-        }
-
-        li button
-        {
-            font-size:25px;
-            border:none;
-            background-color: black;
-            text-decoration: none;
-            text-align: center;
-            padding: 10px;
-            color: cyan;
-            cursor: pointer;
-        }
-        button:focus {outline: 0;}
+    }
+    .scroll{
+        display:inline-block;
+        position:relative;
+        right:0;
 
 
-        li button:hover
-        {
-            color:white;
-        }
+    }
 
-        .standard
-        {
-            margin: 100px auto;
-            width:50%;
-            background-color: #BABABA;
-            border: 3px solid black;
-        }
+    .button
+    {
+        background-color: black;
+        color: #C8C8C8;
+        font-size:18px;
+    }
 
-        .display
-        {
-            color:black;
-            font-size: 20px;
+    .button:focus
+    {
+        outline: none;
+    }
 
-        }
+    .button:hover
+    {
+        background-color: #6B6C6C;
+    }
 
-        img.profile
-        {
-            float:left;
-            margin:100px 60px;
-            border: 3px solid black;
-            width:250px;
-            height:350px;
-            display: inline;
-        }
+    .profile{
+        width:200px;
+        height:200px;
+        border: 1px solid #C8C8C8;
+        border-radius: 100%;
+        display: block;
+        margin: auto;
 
-        img.game
-        {
-            display: block;
-            border: 2px solid black;
-            margin: 20px auto;
-            width: 600px;
-            height: 400px;
-        }
+    }
 
-        img.contact
-        {
-            display: block;
-            margin : 20px;
-        }
+    .profilepic{
+        margin: auto;
+        width: 30%;
+        border-bottom: 1px solid #C8C8C8;
+        padding-bottom: 10px;
+    }
 
-        div h2{font-size:35px; padding:10px; font-weight: bold;}
+    .aboutContent{
+        margin: auto;
+        width: 60%;
+    }
 
-        h3{font-size: 25px; padding:10px;}
+    a{
+        color: #A8FDF4;
+        text-decoration: none;
+    }
 
-        div p{font-size: 30px; padding:10px;}
-        b{height:20px;  margin: 20px auto;}
+    .info li{
+        background-color: #C8C8C8;
+        display: inline-block;
+        margin: 10px;
 
-        @media only screen and (max-width: 1446px)
-        {
 
-            img.profile
-            {
-                width:180px;
-                height:240px;
-            }
+    }
+    .contact{
+        padding:8px;
+        margin:5px;
+    }
 
-            img.game{
-                width:500px;
-                height: 300px;
-            }
+    .info{
+        list-style-type: none;
+        text-align: center;
+        top:0;
+        margin-bottom: 4%;
+    }
 
-        }
+    .game{
+        display:block;
+        text-align: center;
+        margin: auto;
+    }
 
-        @media only screen and (max-width: 1180px)
-        {
-
-            img.profile
-            {
-                width:140px;
-                height:200px;
-            }
-
-            img.game{
-                width:400px;
-                height: 300px;
-            }
-
-        }
-
-        @media only screen and (max-width: 1030px)
-        {
-
-            img.profile
-            {
-                display: none;
-            }
-
-            img.game{
-                width:350px;
-                height: 250px;
-            }
-
-            h1
-            {
-                font-size: 30px;
-            }
-            .sub
-            {
-                font-size: 20px;
-            }
-            .scroll{
-                font-size: 10px;
-            }
-
-            .standard{
-                margin: 50px auto;
-            }
-            div h2{
-                padding: 0 10px;
-            }
-            div p{
-                padding: 0 10px;
-            }
-        }
-
-        @media only screen and (max-width: 1030px)
-        {
-            img.game{
-                width:300px;
-                height: 200px;
-            }
-
-        }
-
-    </style>
+</style>
 </head>
 <body>
 
-<h1>Jose Rodriguez <p class="sub">Software Engineer</p>
+<div class="header">
+    <h1>Jose Rodriguez</h1>
+    <p class="car">Software Engineer </p>
+    <ul class = "headerlist">
+        <li class="scroll"><button class="button" style="border-color:#A8FDF4" id="home" onclick = "changehome()">About</button></li>
+        <li class="scroll"><button  class="button" id="proj" onclick = "changeprojects()">Projects</button></li>
+        <li class="scroll"><button  class="button" id="cont" onclick= "changecontact()">Contact/Github</button></li>
+    </ul>
+</div>
 
-<ul class = "header">
-    <li class="scroll"><button onclick = "scrollhome()">About Me</button></li>
-    <li class="scroll"><button onclick = "scrollprojects()">Projects</button></li>
-    <li class="scroll"><button onclick= "scrollcontact()">Social</button></li>
-
-
-</ul>
-
-</h1>
-<img class = "profile" src = "public/mypic.jpg">
-<div class = "standard">
-<div class="display">
+<div class="main">
     <h2>About Me</h2>
-    <p> Hi, my name is Jose Rodriguez and I am a recent grad from the University of California, Riverside with a B.S. in Computer Science. I am located in Southern California and am currently looking for work.
-        I enjoy working on personal projects and picking up new programming skills along the way. There is a vast amount knowledge to be learned in the software world and I am always up for the challenge.
-         Let me tell you that there is no greater feeling than when I compile my code and there are no errors and it works as intended.
+    <div class="profilepic">
+        <img class = "profile" src = "public/mypic.jpg">
+    </div>
+
+    <div class="aboutContent">
+
+        <p class="about"> Hi, my name is Jose Rodriguez and I am a recent grad from the University of California, Riverside with a B.S. in Computer Science. I am located in Southern California and am currently looking for work.
+            I enjoy working on personal projects and picking up new programming skills along the way. There is a vast amount knowledge to be learned in the software world and I am always up for the challenge.
+            There is no greater feeling to me than when compiling my code and there are no syntax or logic errors.
+        </p>
+
+        <p class="about">When I am not studying or programming I enjoy playing video games or taking my dogs out for a walk.</p>
+
+        <p class="about">To learn more about my skills, here is my <a href="public/JoseRodriguezResume.pdf" target="_blank">Resume.</a></p>
+
+    </div>
+
+
+</div>
+
+<div class="main2">
+    <h2>Projects</h2>
+    <div class = "projects">
+
+        <h3>Video Game:</h3>
+        <p class="about">I made a fun little Android game using the Unity Game Engine. Game art is from an open source website. Here's a GIF of it:</p>
+        <img class = "game" src = "public/gamegif.gif">
+
+        <p class="about"> Source Code and Files found <a href="https://github.com/jrodr056/Super-Death-Times" target="_blank">Here.</a></p>
+
+        <h3>Discord Bot:</h3>
+        <p class="about">This bot has several miscellaneous commands like posting an image from google based on your search query.</p>
+        <p class="about">Source code and files found <a href = "https://github.com/jrodr056/Discord-Utility-Bot" target="_blank">Here.</a></p>
+
+        <h3>This Website:</h3>
+        <p class="about"> This personal website was built from scratch without using any templates or frameworks. Used jquery CSS/HTML <br>See code <a href = "https://github.com/jrodr056/Personal-Website"target="_blank">Here.</a></p>
+
+
+
+    </div>
+
+
+</div>
+
+<div class="main3">
+
+    <h2>Contact/Code</h2>
+
+    <p class="about">
+        Feel free to check out my code on github or contact me on my linkedin/email.
     </p>
 
-    <p>When I am not studying or programming I enjoy playing video games or taking my dogs out for a walk.</p>
+    <ul class="info">
 
-    <p>To learn more about my skills, here is my <a href="public/JoseRodriguezResume.pdf" target="_blank">Resume.</a></p>
-
-</div>
-</div>
-
-<div class = "standard">
-<div class = "display">
-    <h2 class = "scroll">Projects</h2>
-
-    <h3 class = "gscroll">Video Game:</h3>
-    <p>I made a fun little Android game I made using the Unity Game Engine. Here's a GIF of it:</p>
-    <img class = "game" src = "public/gamegif.gif">
-
-    <p> Source Code and Files found <a href="https://github.com/jrodr056/Super-Death-Times" target="_blank">Here.</a></p>
-
-    <h3>Discord Bot:</h3>
-    <p>This bot has several miscellaneous commands like posting an image based on the query you want.</p>
-    <p>Source code and files found <a href = "https://github.com/jrodr056/Discord-Utility-Bot" target="_blank">Here.</a></p>
-
-    <h3>This Website:</h3>
-    <p> This personal website was built from scratch without using any templates or frameworks. <br>See code <a href = "https://github.com/jrodr056/Personal-Website"target="_blank">Here.</a></p>
-
-
-
-</div>
-
-</div>
-
-<div class = "standard">
-    <div class = "display">
-
-        <h2>Contact Me</h2>
-
-        <ul class = lcontact>
-
-        <li><a href = "https://github.com/jrodr056" style="padding : 20px">
+        <li><a href = "https://github.com/jrodr056" target="_blank">
             <img class = "contact" src = "public/github.png" width="60px" height="60px" >
         </a>
         </li>
 
-        <li><a href = "https://www.linkedin.com/in/jose-rodriguez-263959152/" style = "padding: 20px" target="_blank">
+        <li><a href = "https://www.linkedin.com/in/jose-rodriguez-263959152/" target="_blank">
             <img class = "contact" src = "public/linkedin.png" width = "60px" height = "60px">
 
         </a>
         </li>
 
-            <li>
-                <a href = "mailto:joseerodriguez056@gmail.com" src = "public/email.png" width = "60px" height = "60px" target="_blank">
+        <li>
+            <a href = "mailto:joseerodriguez056@gmail.com" src = "public/email.png" width = "60px" height = "60px" target="_blank">
                 <img class = "contact" src = "public/email.png" width = "60px" height = "60px">
             </a>
 
 
-            </li>
+        </li>
 
-        </ul>
+    </ul>
 
-    </div>
 
 </div>
 
 </body>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
-    function scrollhome()
-    {
-        window.scroll({top:0,left:0,behavior:"smooth"});
-    }
 
-    function  scrollprojects()
-    {
-        document.querySelector('.gscroll').scrollIntoView({behavior:"smooth"});
-    }
+    $(document).ready(function() {
+        $("#home").click(function() {
+            //color this border
+            $(this).css("border-color", "#A8FDF4");
 
-    function scrollcontact()
-    {
-        document.querySelector('.lcontact').scrollIntoView({behavior:"smooth"});
-    }
+            //uncolor others
+            $("#proj").css("border-color", "#C8C8C8");
+            $("#cont").css("border-color", "#C8C8C8");
+
+            //show content/ hide content
+            $(".main").show();
+            $(".main2").hide();
+            $(".main3").hide();
+
+        });
+
+        $("#proj").click(function() {
+            //color this border
+            $(this).css("border-color", "#A8FDF4");
+
+            //uncolor others
+            $("#home").css("border-color", "#C8C8C8");
+            $("#cont").css("border-color", "#C8C8C8");
+
+            //show content/ hide content
+            $(".main2").show();
+            $(".main").hide();
+            $(".main3").hide();
+        });
+
+        $("#cont").click(function() {
+            //color this border
+            $(this).css("border-color", "#A8FDF4");
+
+            //uncolor other borders
+            $("#home").css("border-color", "#C8C8C8");
+            $("#proj").css("border-color", "#C8C8C8");
+
+            //show content/ hide content
+            $(".main3").show();
+            $(".main").hide();
+            $(".main2").hide();
+        });
+
+    });
+
 
 </script>
+
 </html>
